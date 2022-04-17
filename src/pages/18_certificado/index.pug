@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        .texts
+            p.title Suas conquistas
+            p Parabéns! Você concluiu o curso exclusivo LGPD na prática na Vivo. Aproveite para fazer o download de suas conquistas e compartilhe nas redes.
+
+        .cards
+            .card.card1
+                .flex
+                    .icone
+                        +image('ico05.png')
+                    .txts
+                        p #[i BADGE]
+                        p.small #[b Curso LGPD na Prática]
+                        p.small Acesse o botão abaixo para fazer o download do seu badge.
+                a(href="../../assets/img/badges_LGPD.zip", download)
+                    .button.button01
+                        p Download
+            .card.card2
+                .flex
+                    .icone
+                        +image('ico06.png')
+                    .txts
+                        p CERTIFICADO
+                        p.small #[b Curso LGPD na Prática]
+                        p.small Acesse o botão abaixo para validar a autenticidade e fazer o download do seu certificado.
+                a(href="../../assets/img/certificado_40.png", download)
+                    .button.button02
+                        p Autenticidade e download
+        
+        p.last Clique no X do navegador e volte para a plataforma de treinamento.                 
+
+
+block scripts
+  

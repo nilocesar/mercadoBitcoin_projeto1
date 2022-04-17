@@ -1,0 +1,18 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        .texts
+            p.title Não é o fim ainda!
+            p Você não conseguiu superar os outros competidores nas duas tentativas que teve, mas não se preocupe, a jornada LGPD na prática estará sempre disponível.  
+            p Para a Vivo, o importante é que você aplique no seu dia a dia os ensinamentos que proporcionamos nesta jornada de aprendizagem. #[span.destaque Isso é ser protagonista!]
+            p.small Feche o jogo clicando no X no navegador, volte para a plataforma de treinamento, revisite os conteúdos e, quando estiver preparado, volte para o jogo para atingir a pontuação necessária para conquistar seu badge e seu certificado. 
+        .image
+            +image('img04.png')
+   
+
+block scripts
+    script(src="script.js")

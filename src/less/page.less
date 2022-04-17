@@ -1,0 +1,59 @@
+@import 'includes/imports.less';
+
+/* less components */
+@import 'includes/component/component.modal.less';
+@import 'includes/component/component.button.less';
+@import 'includes/component/component.header.less';
+@import 'includes/component/component.quiz.less';
+
+/* less template */
+@import 'includes/spacers.less';
+@import 'includes/colors.less';
+@import 'includes/defaults.less';
+
+html,
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	.mr-full{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		width: 90%;
+		height: 90%;
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.56);
+		overflow: hidden;
+		border-radius: 1em;
+	}
+	.logo {
+		position: absolute;
+		top: 0.6em;
+		left: 1em;
+		z-index: 999;
+		img {
+			width: 5em;
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.container-avatar {
+	position: absolute;
+	top: 4em;
+	left: 1em;
+	img {
+		width: 2.7em;
+	}
+}

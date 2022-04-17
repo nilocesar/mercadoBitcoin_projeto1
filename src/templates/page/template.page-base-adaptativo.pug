@@ -1,0 +1,62 @@
+include mixins/index.pug
+
+doctype html
+html.full-iframe.mr-fontsize
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" type="text/css" href="../../template/page.css")
+		block styles
+	body
+		block body-before
+		.mr-full
+			block body
+			header
+				.btns
+					.icon(data-modal="#help")
+						+image('icoHelp.svg')
+					.icon(onclick="navigate.goto('tela01')")
+						+image('icoMenu.svg')
+				
+				.subLogo
+						+image('blockchain.svg')
+					
+					
+
+			#help
+				.image-help
+					+image('img02.png')
+				.texts
+					.row
+						.icon
+							+image('icon02.png')
+						p Para iniciar o circuito, você deverá clicar nos números que aparecem dentro do tabuleiro.
+					.row
+						.icon
+							+image('icon03.png')
+						p Em cada número, você encontrará situações relacionadas ao conteúdo aplicado, e seu desafio é solucionar essas situações selecionando a alternativa correta.
+					.row
+						.icon
+							+image('icon04.png')
+						p O circuito é composto por 10 desafios, e você deve acertar, no mínimo, 8 deles para comprovar que está por dentro da lei e garantir o topo do ranking do campeonato.
+				.modal-close
+					i.fa.fa-close
+
+			.container-avatar
+
+		block body-after
+
+	+scriptVendor('eventEmitter.js')
+	+scriptVendor('jquery.min.js')
+	+scriptVendor('particles.min.js')
+	
+	+scriptModule('component.base-page.js')
+	+scriptModule('behavior.adaptative.js')
+	+scriptModule('component.modal.js')
+	
+	+scriptScripts('animations.js')
+	+scriptScripts('pages.js')
+	+scriptScripts('resize.js')
+	block scripts
+	

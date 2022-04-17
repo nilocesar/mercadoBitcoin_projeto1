@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '2',
+            enunciado: 'Maria é gerente de negócio B2B e possui em sua carteira o cliente Parceiro S.A. em processo de renovação de contrato. Ela recebe de seu cliente um termo com cláusulas sobre responsabilidades relacionadas ao tratamento e à proteção de dados pessoais e, também, um questionário com perguntas sobre proteção de dados e segurança da informação.  <br><br> <b>Para quem Maria deverá direcionar essas demandas?</b>',
+            alternatives: [
+                {
+                    class: 'resposta-errada',
+                    text: 'Encaminhar o termo com cláusulas para análise do Jurídico; já o questionário, <br>responder sozinha.',
+                    score: '0'
+                },
+                {
+                    class: 'resposta-correta',
+                    text: 'Encaminhar o termo com cláusulas para análise do Jurídico; já o questionário, enviar <br>para a área DPO.',
+                    score: '1'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'Muito bem! Um acerto para a conta. ',
+                    text: 'Neste caso, quando se trata de questões contratuais, como termos, aditivos, cláusulas e contrato, realmente é correto encaminhar a análise para o Jurídico, via PROCESSUM, e o questionário, via e-mail, para o Escritório de Privacidade, que analisará a demanda e responderá às perguntas pertinentes, alinhando as respostas sobre segurança da informação com a equipe de Segurança Digital. <br><br> Se a Vivo for questionada pelos clientes B2B sobre a sua atuação com relação à LGPD, devemos prestar os devidos esclarecimentos. Para isso, procure a área DPO para análise e possível resposta através de uma declaração. <br><br> <b>#FicaADica:</b> nesses casos, envie os questionários de forma antecipada para que as áreas consigam responder e avaliar as priorizações frente à atuação <br> no dia a dia deles.'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'Foi por pouco!',
+                    text: '<b>Resposta correta:</b> neste caso, quando se trata de questões contratuais, como termos, aditivos, cláusulas e contrato, realmente é correto encaminhar a análise para o Jurídico, e o questionário para a área DPO. <br><br> <b>Justificativa:</b> se a Vivo for questionada pelos clientes B2B sobre a sua atuação com relação à LGPD, devemos prestar os devidos esclarecimentos. Para isso, procure a área DPO para análise e possível resposta através de uma declaração. <br><br> <b>#FicaADica:</b> nesses casos, envie os questionários de forma antecipada para que as áreas consigam responder e avaliar as priorizações frente à <br> atuação no dia a dia deles.'
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')

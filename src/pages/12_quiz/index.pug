@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '8',
+            enunciado: 'Juliene e sua equipe de Canais Digitais estão preparando um novo aplicativo para os clientes da Vivo que visa facilitar o acesso ao histórico de ligações, ao consumo de internet e às faturas. Para acessar todas as funcionalidades, é preciso realizar um cadastro, e a equipe planeja coletar diversas informações, como nome completo, CPF, endereço, histórico médico e preferência política.  <br><br> <b>Considerando a finalidade almejada pelo aplicativo, os dados pessoais que seriam coletados pela equipe estão aderentes à LGPD?</b>',
+            alternatives: [
+                {
+                    class: 'resposta-correta', 
+                    text: 'Não, pois as informações que seriam coletadas não estão aderentes ao Princípio de Finalidade porque excedem o tratamento dos dados necessários para alcançar <br>a finalidade desejada.',
+                    score: '1'
+                },
+                {
+                    class: 'resposta-errada',
+                    text: 'Sim, pois parte das informações estão compatíveis com o Princípio de Finalidade e são necessárias para execução das funcionalidades previstas no aplicativo.',
+                    score: '0'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'Muito bem! Um acerto para conta.',
+                    text: 'O histórico médico e a preferência política que Juliene e sua equipe de Canais Digitais desejam coletar são desnecessários para as funcionalidades e as finalidades previstas para execução do aplicativo, não respeitando o Princípio da Necessidade previsto na LGPD. <br><br> <b>#FicaADica:</b> o Princípio da Finalidade estabelece: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos com relação às finalidades do tratamento de dados.'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'Foi por pouco!',
+                    text: '<b>Resposta correta:</b> o histórico médico e a preferência política que Juliene e sua equipe de Canais Digitais desejam coletar são desnecessários para as funcionalidades e as finalidades previstas para execução do aplicativo, não respeitando o Princípio da Necessidade previsto na LGPD. <b>#FicaADica:</b> o Princípio da Finalidade estabelece: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos com relação às finalidades do tratamento de dados.'
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')

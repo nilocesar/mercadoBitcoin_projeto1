@@ -1,0 +1,1 @@
+{"version":3,"sources":["resize.js"],"names":["BehaviorAdapt"],"mappings":"AAAAA,aAAa,CAAC,IAAD,EAAO,IAAP,EAAa,EAAb,CAAb","sourcesContent":["BehaviorAdapt(1920, 1080, 30);"],"file":"resize.js"}

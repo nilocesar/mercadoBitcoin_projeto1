@@ -1,0 +1,26 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        .texts
+            p.title Fim do Campeonato!
+            p Agora você está muito mais preparado para enfrentar os desafios que irão aparecer em seu dia a dia relacionados à proteção, à segurança e ao tratamento de dados pessoais. 
+            p A Vivo sabe que o seu papel é fundamental, afinal você agora é um protagonista LGPD.
+            p #[span.destaque E não esqueça:] é extremamente importante que você aplique no seu dia a dia todos os ensinamentos que proporcionamos nesta jornada de aprendizagem. 
+            p Clique no botão Avançar para acessar o badge e o seu certificado.
+        .image
+            +image('img03.png')
+    .button-final
+        +button({
+            navigate: '18_certificado',
+            text: 'Avançar',
+            icon: 'icon01.png'
+        })        
+
+
+
+block scripts
+  

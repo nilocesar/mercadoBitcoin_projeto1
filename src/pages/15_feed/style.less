@@ -1,0 +1,103 @@
+@import "../../less/includes/colors.less";
+
+.container {
+  background-image: url(../../assets/img/bg06.png);
+  .image {
+    position: absolute;
+    bottom: 3em;
+    left: 4em;
+    img {
+      width: 23em;
+    }
+  }
+  .texts {
+    position: absolute;
+    right: 8em;
+    top: 8em;
+    color: @color-white;
+    text-align: center;
+    width: 21em;
+    .title {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    .score {
+      font-weight: bold;
+      font-size: 3em;
+      margin: 0;
+    }
+  }
+}
+
+.container-avatar {
+  display: none;
+}
+
+.container-button {
+  width: 8em;
+  margin: 1.5em auto;
+}
+.avatar {
+  position: absolute;
+  z-index: 2;
+
+  &.avatar1,
+  &.avatar2 {
+    width: 5em;
+  }
+
+  &.avatar3 {
+    width: 6em;
+  }
+}
+
+.controlPodio1 {
+  .avatar1 {
+    top: 11em;
+    left: 13.5em;
+  }
+
+  .avatar2 {
+    top: 10em;
+    left: 13.5em;
+  }
+
+  .avatar3 {
+    top: 14.8em;
+    left: 12.5em;
+  }
+}
+
+.controlPodio2 {
+  .avatar1 {
+    top: 12.7em;
+    left: 5.5em;
+  }
+
+  .avatar2 {
+    top: 11.7em;
+    left: 5.5em;
+  }
+
+  .avatar3 {
+    top: 16.3em;
+    left: 4.5em;
+  }
+}
+
+.controlPodio3 {
+  .avatar1 {
+    top: 14.1em;
+    left: 21em;
+  }
+
+  .avatar2 {
+    top: 13.1em;
+    left: 21em;
+  }
+
+  .avatar3 {
+    top: 18em;
+    left: 20.4em;
+  }
+}

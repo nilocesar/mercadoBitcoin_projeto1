@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="full-iframe mr-fontsize">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../template/page.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mr-full">
+      <div class="container">
+        <div class="quiz" id="10">
+          <p class="enunciado">A equipe de Produtos B2B está desenvolvendo uma nova solução aplicável aos clientes B2B. Para execução dessa nova solução, a equipe utilizará o nome empresarial, o CNPJ e o endereço comercial, sendo todas essas informações relacionadas a Pessoa Jurídica. Ao ter conhecimento sobre a atuação da companhia com a LGPD, o gestor começa a realizar o mapeamento do processo. <br><br> <b>Considerando as diretrizes e regras da LGPD, o gestor precisaria realizar o <br>mapeamento da solução em destaque?</b></p>
+          <div class="alternativas">
+            <div class="alternativa resposta-errada" data-indicadores="{&quot;score&quot;: 0}">
+              <p>Sim. A solução desenvolvida pelo time de Produtos deve ser mapeada pela área DPO, pois realiza o tratamento de dados dos clientes B2B (Pessoa Jurídica).</p>
+            </div>
+            <div class="alternativa resposta-correta" data-indicadores="{&quot;score&quot;: 1}">
+              <p>Não. A solução em desenvolvimento pelo time de Produtos não realiza o tratamento de dados pessoais (Pessoa Física), não sendo aplicável a LGPD e não sendo necessário <br>o mapeamento das informações.</p>
+            </div>
+            <div class="confirmar">
+              <div class="container-button">
+                <p>Responder</p>
+                <div class="icone"><img src="../../assets/img/icon01.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback hide feedback-positivo">
+            <div class="flex">
+              <div class="container-feed zoomIn">
+                <div class="icon"><img src="../../assets/img/ico-positivo.svg"/>
+                </div>
+                <div class="texts">
+                  <p class="title">É assim que se faz! Acertou em cheio.</p>
+                  <p>A LGPD somente se aplica quando existe tratamento de dados pessoais de Pessoa Física, e a solução desenvolvida por Amanda e pelo time de Produtos B2B apenas utiliza informações relativas a Pessoa Jurídica, não sendo necessário realizar o mapeamento dos dados. <br><br> <b>#FicaADica:</b> caso Amanda utilizasse os dados pessoais dos representantes da Pessoa Jurídica do cliente B2B, tais como nome, CPF e e-mail, a solução deveria ser mapeada, pois a LGPD se aplica a esses casos.</p>
+                </div>
+                <div class="feed-close">
+                  <div class="container-button">
+                    <p>Avançar</p>
+                    <div class="icone"><img src="../../assets/img/icon01.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback hide feedback-negativo">
+            <div class="flex">
+              <div class="container-feed zoomIn">
+                <div class="icon"><img src="../../assets/img/ico-negativo.svg"/>
+                </div>
+                <div class="texts">
+                  <p class="title">Foi por pouco!</p>
+                  <p><b>Resposta correta:</b> as informações que Amanda e o time de Produtos B2B desejam utilizar no desenvolvimento da solução não são dados pessoais, pois não são relativas a Pessoa Física. Nesses casos, a LGPD não é aplicável. <br><br> <b>#FicaADica:</b> caso Amanda utilizasse os dados pessoais dos representantes da Pessoa Jurídica do cliente B2B, tais como nome, CPF e e-mail, a solução deveria ser mapeada, pois a LGPD se aplica a esses casos.</p>
+                </div>
+                <div class="feed-close">
+                  <div class="container-button">
+                    <p>Avançar</p>
+                    <div class="icone"><img src="../../assets/img/icon01.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="btns">
+          <div class="icon" data-modal="#help"><img src="../../assets/img/icoHelp.svg"/>
+          </div>
+          <div class="icon" onclick="navigate.goto('tela01')"><img src="../../assets/img/icoMenu.svg"/>
+          </div>
+        </div>
+        <div class="subLogo"><img src="../../assets/img/blockchain.svg"/>
+        </div>
+      </header>
+      <div id="help">
+        <div class="image-help"><img src="../../assets/img/img02.png"/>
+        </div>
+        <div class="texts">
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon02.png"/>
+            </div>
+            <p>Para iniciar o circuito, você deverá clicar nos números que aparecem dentro do tabuleiro.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon03.png"/>
+            </div>
+            <p>Em cada número, você encontrará situações relacionadas ao conteúdo aplicado, e seu desafio é solucionar essas situações selecionando a alternativa correta.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon04.png"/>
+            </div>
+            <p>O circuito é composto por 10 desafios, e você deve acertar, no mínimo, 8 deles para comprovar que está por dentro da lei e garantir o topo do ranking do campeonato.</p>
+          </div>
+        </div>
+        <div class="modal-close"><i class="fa fa-close"></i></div>
+      </div>
+      <div class="container-avatar"></div>
+    </div>
+  </body>
+  <script src="../../vendor/eventEmitter.js"></script>
+  <script src="../../vendor/jquery.min.js"></script>
+  <script src="../../vendor/particles.min.js"></script>
+  <script src="../../modules/component.base-page.js"></script>
+  <script src="../../modules/behavior.adaptative.js"></script>
+  <script src="../../modules/component.modal.js"></script>
+  <script src="../../scripts/animations.js"></script>
+  <script src="../../scripts/pages.js"></script>
+  <script src="../../scripts/resize.js"></script>
+  <script src="../../scripts/pick-one-init.js"></script>
+</html>

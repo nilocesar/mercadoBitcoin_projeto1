@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '4',
+            enunciado: 'A equipe de Finanças está desenvolvendo um projeto que visa facilitar o pagamento da fatura dos clientes em um aplicativo de pagamentos de um parceiro. Ao pagar a fatura pelo aplicativo, os clientes ganhariam vantagens dentro da plataforma do terceiro e bonificações por parte da Vivo. Na montagem do projeto, a equipe identifica que será necessário o tratamento de dados pessoais dos clientes, dentre eles: nome completo, CPF, número do cartão de crédito, agência e conta. <br><br> <b>Nesse caso, as informações citadas correspondem a:</b>',
+            alternatives: [
+                {
+                    class: 'resposta-correta',
+                    text: 'Dados pessoais, pois podem identificar uma pessoa.',
+                    score: '1'
+                },
+                {
+                    class: 'resposta-errada',
+                    text: 'Dados pessoais sensíveis, pois são informações financeiras.',
+                    score: '0'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'É assim que se faz! Acertou em cheio.',
+                    text: 'O CPF e as informações financeiras não são considerados dados pessoais sensíveis pela LGPD. A LGPD estabelece como dados pessoais sensíveis: dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico quando vinculado a uma pessoa natural. <br><br> <b>#FicaADica:</b>  todas as demandas que envolvem dados pessoais devem passar pelos fluxos de avaliação da área DPO.'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'Não desanime, estamos apenas aquecendo!',
+                    text: '<b>Resposta correta:</b> o CPF e as informações financeiras não são considerados dados pessoais sensíveis pela LGPD. A LGPD estabelece como dados pessoais sensíveis: dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico quando vinculado a uma pessoa natural.  <br><br> <b>#FicaADica:</b> todas as demandas que envolvem dados pessoais devem passar pelos fluxos de avaliação da área DPO.'
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')

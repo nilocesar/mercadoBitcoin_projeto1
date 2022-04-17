@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '6',
+            enunciado: 'Caroline é gerente sênior B2B e, junto com o restante de sua equipe, está com dúvidas <br>sobre diversos pontos da LGPD. <br><br> <b>Qual área Caroline deve procurar para tirar essas dúvidas?</b>',
+            alternatives: [
+                {
+                    class: 'resposta-correta',
+                    text: 'Para tirar dúvidas gerais sobre questões envolvendo tratamento de dados pessoais e LGPD, Caroline deve procurar a equipe DPO.',
+                    score: '1'
+                },
+                {
+                    class: 'resposta-errada',
+                    text: 'Caroline deve procurar a área Jurídica para esclarecer suas dúvidas sobre o <br>tratamento de dados.',
+                    score: '0'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'É assim que se faz! Acertou em cheio.',
+                    text: 'O Escritório de Privacidade (DPO) da Vivo, dentre outras funções, é o responsável pela conscientização de funcionários envolvendo questões relacionadas à proteção de dados e à LGPD. <br><br> <b>#FicaADica:</b> caso tenha dúvidas sobre o tema, entre em contato com a equipe DPO pelo e-mail lgpd.br@telefonica.com. Este curso e-learning ficará disponível de forma permanente dentro do SuccessFactors, e você poderá entrar aqui para consultar e reforçar seus entendimentos sobre aspectos da LGPD sempre que quiser!'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'Calma, suas chances não acabaram!',
+                    text: '<b>Resposta correta:</b>o Escritório de Privacidade (DPO), dentre outras funções, atua de maneira ativa na conscientização sobre a LGPD e como apoio interno das áreas na aplicação e no envolvimento do tema no dia a dia da empresa. <br><br><b>#FicaADica:</b> caso tenha dúvidas sobre o tema, entre em contato com a equipe DPO pelo e-mail lgpd.br@telefonica.com. Este curso e-learning ficará disponível de forma permanente dentro do SuccessFactors, e você poderá entrar aqui para consultar e reforçar seus entendimentos sobre aspectos da LGPD sempre que quiser!'
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')

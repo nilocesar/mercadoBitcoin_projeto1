@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="full-iframe mr-fontsize">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../template/page.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mr-full">
+      <div class="container">
+        <div class="bg"></div>
+        <div id="particles-js"></div>
+        <div class="triangulo zoomIn delay1">
+          <div class="triangImg flicker"></div>
+          <div class="block highFreq"></div>
+          <div class="cityContainer zoomIn delay2">
+            <video src="../../assets/videos/video2.webm" preload="auto" autoplay loop muted></video>
+          </div>
+          <div class="btnInt" onclick="navigate.next()">
+            <div class="icoB down delay3"></div>
+            <div class="conT left">
+              <p>Entrar</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="btns">
+          <div class="icon" data-modal="#help"><img src="../../assets/img/icoHelp.svg"/>
+          </div>
+          <div class="icon" onclick="navigate.goto('tela01')"><img src="../../assets/img/icoMenu.svg"/>
+          </div>
+        </div>
+        <div class="subLogo"><img src="../../assets/img/blockchain.svg"/>
+        </div>
+      </header>
+      <div id="help">
+        <div class="image-help"><img src="../../assets/img/img02.png"/>
+        </div>
+        <div class="texts">
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon02.png"/>
+            </div>
+            <p>Para iniciar o circuito, você deverá clicar nos números que aparecem dentro do tabuleiro.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon03.png"/>
+            </div>
+            <p>Em cada número, você encontrará situações relacionadas ao conteúdo aplicado, e seu desafio é solucionar essas situações selecionando a alternativa correta.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon04.png"/>
+            </div>
+            <p>O circuito é composto por 10 desafios, e você deve acertar, no mínimo, 8 deles para comprovar que está por dentro da lei e garantir o topo do ranking do campeonato.</p>
+          </div>
+        </div>
+        <div class="modal-close"><i class="fa fa-close"></i></div>
+      </div>
+      <div class="container-avatar"></div>
+    </div>
+  </body>
+  <script src="../../vendor/eventEmitter.js"></script>
+  <script src="../../vendor/jquery.min.js"></script>
+  <script src="../../vendor/particles.min.js"></script>
+  <script src="../../modules/component.base-page.js"></script>
+  <script src="../../modules/behavior.adaptative.js"></script>
+  <script src="../../modules/component.modal.js"></script>
+  <script src="../../scripts/animations.js"></script>
+  <script src="../../scripts/pages.js"></script>
+  <script src="../../scripts/resize.js"></script>
+  <script src="script.js"></script>
+</html>

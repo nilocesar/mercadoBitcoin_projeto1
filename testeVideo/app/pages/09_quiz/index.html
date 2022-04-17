@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="full-iframe mr-fontsize">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../template/page.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mr-full">
+      <div class="container">
+        <div class="quiz" id="5">
+          <p class="enunciado">Para o desenvolvimento de uma solução de mobilidade urbana, a Vivo está em via de lançar um produto que auxilia a reduzir o trânsito em grandes cidades. A tecnologia utiliza mapas de calor para identificação de grupos de pessoas se locomovendo pela cidade e altera tempos de semáforos, modificando a velocidade de faixas de maneira inteligente. Todos os dados utilizados na solução são anonimizados, ou seja, não é possível identificar nenhum indivíduo a partir desses dados.  <br><br> <b>A LGPD se aplica à solução desenvolvida para redução do trânsito por meio do uso de mapas de calor?</b></p>
+          <div class="alternativas">
+            <div class="alternativa resposta-correta" data-indicadores="{&quot;score&quot;: 1}">
+              <p>Não, a LGPD não se aplica ao uso de dados anonimizados. Apenas é aplicável ao tratamento de dados pessoais que identifiquem ou tornem um indivíduo identificável.</p>
+            </div>
+            <div class="alternativa resposta-errada" data-indicadores="{&quot;score&quot;: 0}">
+              <p>Sim, a LGPD se aplica nesse caso, porque existe coleta de dados agrupados.</p>
+            </div>
+            <div class="confirmar">
+              <div class="container-button">
+                <p>Responder</p>
+                <div class="icone"><img src="../../assets/img/icon01.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback hide feedback-positivo">
+            <div class="flex">
+              <div class="container-feed zoomIn">
+                <div class="icon"><img src="../../assets/img/ico-positivo.svg"/>
+                </div>
+                <div class="texts">
+                  <p class="title">É assim que se faz! Acertou em cheio.</p>
+                  <p>A LGPD não se aplica por se tratar do uso de dados anonimizados, ou seja, informações que não são capazes de identificar uma pessoa natural.<br><br> Os dados anonimizados são aqueles que passaram por um processo de desidentificação dos dados, isto é, tornando o indivíduo anônimo, sem possibilidade de identificação.  <br><br> <b>#FicaADica:</b> dados anonimizados não estão sujeitos à aplicação da LGPD e por isso são recomendados. Em caso de dúvida, entre em contato com a equipe DPO para esclarecer como isso se aplicará no seu projeto ou processo de negócio.</p>
+                </div>
+                <div class="feed-close">
+                  <div class="container-button">
+                    <p>Avançar</p>
+                    <div class="icone"><img src="../../assets/img/icon01.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback hide feedback-negativo">
+            <div class="flex">
+              <div class="container-feed zoomIn">
+                <div class="icon"><img src="../../assets/img/ico-negativo.svg"/>
+                </div>
+                <div class="texts">
+                  <p class="title">Poxa, precisamos melhorar isso aí!</p>
+                  <p><b>Resposta correta:</b> para o caso em questão, a LGPD não se aplica por se tratar do uso de dados anonimizados, isto é, dados que não permitem a <br> associação a uma pessoa.<br><br> <b>Justificativa:</b> no tratamento de dados anonimizados, por não ser possível identificar um indivíduo específico, não há aplicação da LGPD.<br><br> <b>#FicaADica:</b> dados anonimizados não estão sujeitos à aplicação da LGPD e por isso são recomendados. Em caso de dúvida, entre em contato com a equipe DPO para esclarecer como isso se aplicará no seu projeto ou processo de negócio.</p>
+                </div>
+                <div class="feed-close">
+                  <div class="container-button">
+                    <p>Avançar</p>
+                    <div class="icone"><img src="../../assets/img/icon01.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="btns">
+          <div class="icon" data-modal="#help"><img src="../../assets/img/icoHelp.svg"/>
+          </div>
+          <div class="icon" onclick="navigate.goto('tela01')"><img src="../../assets/img/icoMenu.svg"/>
+          </div>
+        </div>
+        <div class="subLogo"><img src="../../assets/img/blockchain.svg"/>
+        </div>
+      </header>
+      <div id="help">
+        <div class="image-help"><img src="../../assets/img/img02.png"/>
+        </div>
+        <div class="texts">
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon02.png"/>
+            </div>
+            <p>Para iniciar o circuito, você deverá clicar nos números que aparecem dentro do tabuleiro.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon03.png"/>
+            </div>
+            <p>Em cada número, você encontrará situações relacionadas ao conteúdo aplicado, e seu desafio é solucionar essas situações selecionando a alternativa correta.</p>
+          </div>
+          <div class="row">
+            <div class="icon"><img src="../../assets/img/icon04.png"/>
+            </div>
+            <p>O circuito é composto por 10 desafios, e você deve acertar, no mínimo, 8 deles para comprovar que está por dentro da lei e garantir o topo do ranking do campeonato.</p>
+          </div>
+        </div>
+        <div class="modal-close"><i class="fa fa-close"></i></div>
+      </div>
+      <div class="container-avatar"></div>
+    </div>
+  </body>
+  <script src="../../vendor/eventEmitter.js"></script>
+  <script src="../../vendor/jquery.min.js"></script>
+  <script src="../../vendor/particles.min.js"></script>
+  <script src="../../modules/component.base-page.js"></script>
+  <script src="../../modules/behavior.adaptative.js"></script>
+  <script src="../../modules/component.modal.js"></script>
+  <script src="../../scripts/animations.js"></script>
+  <script src="../../scripts/pages.js"></script>
+  <script src="../../scripts/resize.js"></script>
+  <script src="../../scripts/pick-one-init.js"></script>
+</html>

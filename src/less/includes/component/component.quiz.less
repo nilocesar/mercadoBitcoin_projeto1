@@ -1,0 +1,80 @@
+.quiz {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .enunciado {
+        width: 44em;
+        color: @color-white;
+        text-align: center;
+        margin-top: 4.2em;
+    }
+    .alternativas {
+        .alternativa {
+            border: 0.1rem solid @color-white;
+            background-color: @color-purple;
+            border-radius: 3em;
+            padding: 0.8em 2.3em;
+            margin: 1.2em;
+            text-align: center;
+            color: @color-white;
+            width: 42em;
+            cursor: pointer;
+            &:hover {
+                opacity: .45;
+            }
+            &.selecionado {
+                border-color: @color-blue;
+                opacity: .45;
+            }
+        }
+    }
+    .confirmar {
+        .container-button {
+            width: 8.7em;
+            margin: 0 auto;
+        }
+    }
+    .feedback {
+        background-image: url(../assets/img/bg05.png);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin-top: 1.3em;
+            .container-feed {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    img {
+                        width: 5em;
+                    }
+                }
+                .texts {
+                    width: 32em;
+                    p {
+                        text-align: center;
+                        color: @color-white;
+                        &.title {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .feed-close {
+                    margin-top: .5em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '7',
+            enunciado: 'Mayara é analista de atendimento na Vivo e atua na solução de solicitações dos clientes que entram em contato para resolver questões diversas relacionadas aos serviços e produtos que oferecemos. Em determinado dia, ela recebeu uma solicitação enviada por um cliente que buscava os meios para exercer os seus direitos previstos na LGPD. <br><br> <b>Qual canal Mayara deve informar ao cliente para que este possa exercer os seus direitos como titular de dados considerando as diretrizes trazidas pela LGPD? </b>',
+            alternatives: [
+                {
+                    class: 'resposta-correta',
+                    text: 'Informar ao cliente que a Vivo possui um Centro de Privacidade contendo informações relacionadas ao tratamento e à proteção de dados, de forma didática e transparente, e indicar o e-mail externo da equipe DPO (dpo.br@telefonica.com).',
+                    score: '1'
+                },
+                {
+                    class: 'resposta-errada',
+                    text: 'Informar ao cliente que a Vivo possui um site de relacionamento com investidores e <br>indicar o endereço do site.',
+                    score: '0'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'É assim que se faz!',
+                    text: 'A Vivo possui um Centro de Privacidade e Transparência disponível, de maneira pública, didática e transparente, em seu website para todos os titulares de dados com os quais possuímos algum tipo de interação. Dentro do nosso Centro de Privacidade, os titulares podem exercer os seus direitos, entender melhor as práticas de Proteção de Dados da Vivo e entrar em contato com o Escritório de Privacidade através do e-mail dpo.br@telefonica.com. <br><br> <b>#FicaADica:</b>  você, como colaborador da Vivo, também pode exercer os seus direitos previstos na LGPD por meio do portal Vivo Pessoas.'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'A próxima eu sei que você vai tirar de letra!',
+                    text: '<b>Resposta correta:</b> o site de Relação com Investidores da Telefônica Brasil S.A. não é o canal adequado para esse caso. <br><br>  A Vivo possui um Centro de Privacidade e Transparência por meio do qual os titulares podem exercer os seus direitos, entender melhor as práticas de Proteção de Dados da Vivo e entrar em contato com o Escritório de Privacidade através do e-mail dpo.br@telefonica.com. <br><br> <b>#FicaADica:</b> você, como colaborador da Vivo, também pode exercer os seus direitos previstos na LGPD por meio do portal Vivo Pessoas. '
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')

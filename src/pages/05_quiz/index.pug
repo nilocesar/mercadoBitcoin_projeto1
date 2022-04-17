@@ -1,0 +1,40 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        +quiz({
+            id: '1',
+            enunciado: 'O time de Marketing está desenvolvendo uma nova campanha que visa aumentar a visibilidade da marca Vivo e das vendas no interior de São Paulo. <br><br> <b>Por ser uma campanha que envolve o tratamento de dados pessoais de futuros clientes, qual o procedimento a ser realizado?</b>',
+            alternatives: [
+                {
+                    class: 'resposta-correta',
+                    text: 'Procurar a área DPO para iniciar o fluxo de mapeamento de processos.',
+                    score: '1'
+                },
+                {
+                    class: 'resposta-errada',
+                    text: 'Seguir com a campanha, pois os dados não são de clientes atuais, apenas futuros clientes.',
+                    score: '0'
+                }
+            ],
+            feedbacks: [
+                {
+                    class: 'feedback-positivo',
+                    title: 'Acertou na mosca!',
+                    text: 'Acionar a área DPO e iniciar um novo fluxo de mapeamento de processo é o procedimento que deve ser feito em todos os novos processos que envolvam tratamento de dados pessoais. <br><br> Isso garante que o processo tenha o embasamento legal adequado e as recomendações de segurança da informação que forem pertinentes. <br><br> <b>#FicaADica:</b> em caso de dúvidas, acesse a página da área DPO na intranet (http://intranet.telefonica.com.br/sitearea-data-protection-office-).'
+                },
+                {
+                    class: 'feedback-negativo',
+                    title: 'Poxa, não foi dessa vez!',
+                    text: '<b>Resposta correta:</b> o procedimento correto a se fazer neste caso é acionar a área DPO e iniciar um novo fluxo de mapeamento de processo. <br><br> <b>Justificativa:</b> se o procedimento acima não for seguido, a área DPO não fará o mapeamento do processo, e isso poderá comprometer o negócio e a empresa. <br><br> <b>#FicaADica:</b> em caso de dúvidas, acesse a página da área DPO na intranet (http://intranet.telefonica.com.br/sitearea-data-protection-office-).'
+                }
+            ]
+        })
+
+
+
+block scripts
+    +scriptScripts('pick-one-init.js')
