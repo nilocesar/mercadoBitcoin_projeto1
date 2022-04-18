@@ -1,1 +1,0 @@
-{"version":3,"sources":["set-completed.js"],"names":["events","on","scorm","setCompleted"],"mappings":"AAAAA,MAAM,CAACC,EAAP,CAAU,OAAV,EAAmB,YAAY;AAC3BC,EAAAA,KAAK,CAACC,YAAN;AACH,CAFD","sourcesContent":["events.on('ready', function () {\n    scorm.setCompleted();\n});"],"file":"set-completed.js"}

@@ -11,9 +11,21 @@
     --card-width: calc(var(--card-height) / 1.5);
 }
 
-header {
-    display:none;
+body{
+    --a: "0deg";
+    --xAngle: "0deg";
+    --yAngle: "0deg";
+
+    perspective: 30cm;
+
+    &:hover .triangulo{
+        transition-duration: 0s;
+    }
 }
+
+// header {
+//     display:none;
+// }
 
 .container {
 
@@ -101,6 +113,15 @@ header {
         height: 25em;
         cursor: pointer;
 
+        transform: rotateX(var(--xAngle)) rotateY(var(--yAngle)) translate3d(0,0,6cm);
+        transform-style: preserve-3d;
+
+        .trianguloBase{
+            position: relative;
+            width:100%;
+            height: 100%;
+        }
+
         .triangImg{
             position: absolute;
             width: 100%;
@@ -130,17 +151,23 @@ header {
             }
         }
 
-        .blockchain{
+        .iniciar{
             position: absolute;
-            width: 6em;
-            height: 6em;
+            width: 8em;
+            height: 7em;
             left: 50%;
-            bottom: 25%;
-            margin-left: -3em;
-            background-image: url(../../assets/img/blockchain.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
+            bottom: 4em;
+            margin-left: -4em;
+            
+            div{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-image: url(../../assets/img/iniciar.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
         }
 
         

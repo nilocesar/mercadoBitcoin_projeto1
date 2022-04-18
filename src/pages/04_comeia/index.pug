@@ -5,36 +5,51 @@ block styles
 
 block body
     .container
-        +quiz({
-            id: '1',
-            enunciado: 'O time de Marketing está desenvolvendo uma nova campanha que visa aumentar a visibilidade da marca Vivo e das vendas no interior de São Paulo. <br><br> <b>Por ser uma campanha que envolve o tratamento de dados pessoais de futuros clientes, qual o procedimento a ser realizado?</b>',
-            alternatives: [
-                {
-                    class: 'resposta-correta',
-                    text: 'Procurar a área DPO para iniciar o fluxo de mapeamento de processos.',
-                    score: '1'
-                },
-                {
-                    class: 'resposta-errada',
-                    text: 'Seguir com a campanha, pois os dados não são de clientes atuais, apenas futuros clientes.',
-                    score: '0'
-                }
-            ],
-            feedbacks: [
-                {
-                    class: 'feedback-positivo',
-                    title: 'Acertou na mosca!',
-                    text: 'Acionar a área DPO e iniciar um novo fluxo de mapeamento de processo é o procedimento que deve ser feito em todos os novos processos que envolvam tratamento de dados pessoais. <br><br> Isso garante que o processo tenha o embasamento legal adequado e as recomendações de segurança da informação que forem pertinentes. <br><br> <b>#FicaADica:</b> em caso de dúvidas, acesse a página da área DPO na intranet (http://intranet.telefonica.com.br/sitearea-data-protection-office-).'
-                },
-                {
-                    class: 'feedback-negativo',
-                    title: 'Poxa, não foi dessa vez!',
-                    text: '<b>Resposta correta:</b> o procedimento correto a se fazer neste caso é acionar a área DPO e iniciar um novo fluxo de mapeamento de processo. <br><br> <b>Justificativa:</b> se o procedimento acima não for seguido, a área DPO não fará o mapeamento do processo, e isso poderá comprometer o negócio e a empresa. <br><br> <b>#FicaADica:</b> em caso de dúvidas, acesse a página da área DPO na intranet (http://intranet.telefonica.com.br/sitearea-data-protection-office-).'
-                }
-            ]
-        })
+        .bg
+        #particles-js
+        .comeiaAll.zoomIn.delay3
+            +image('comeiaIcoCentral.svg', "comeiaCenter zoomIn delay4")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem1")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem2")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem3")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem4")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem5")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem6")
+           
+            .hit.comeiaItem1(item=1 , page="05_material" )
+                +comeiaHit()
+                .seta
+                    p.down Segredo das Informações
+                    +image('setaComeia.svg', "setaComeia in")
+            .hit.comeiaItem2(item=2, page="05_material" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.right Segredo das Informações
+                    
+            .hit.comeiaItem3(item=3, page="05_material" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.up Segredo das Informações
+            .hit.comeiaItem4(item=4, page="05_material" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.up Segredo das Informações
+            .hit.comeiaItem5(item=5, page="05_material" )
+                +comeiaHit()
+                .seta
+                    p.left Segredo das Informações
+                    +image('setaComeia.svg', "setaComeia in")
+            .hit.comeiaItem6(item=6, page="05_material" )
+                +comeiaHit()
+                .seta
+                    p.down Segredo das Informações
+                    +image('setaComeia.svg', "setaComeia in")
 
-
+                   
+                
 
 block scripts
-    +scriptScripts('pick-one-init.js')
+    script(src="script.js")

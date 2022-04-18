@@ -1,1 +1,0 @@
-{"version":3,"sources":["script.js"],"names":["events","on"],"mappings":"AAAAA,MAAM,CAACC,EAAP,CAAU,OAAV,EAAmB,YAAY,CAE9B,CAFD","sourcesContent":["events.on('ready', function () {\n  \n});"],"file":"script.js"}
