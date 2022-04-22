@@ -1,0 +1,58 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    body(angleBase=15 , comeiaCurrent=2, comeiaAll=6)
+    .container.containerAnima1
+        .bg
+        #particles-js
+        .titulo Investimento em<br> Criptoativos
+        .comeiaAll.zoomIn.delay3
+            +image('comeiaIcoCentral.svg', "comeiaCenter zoomIn delay4")
+            
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem1")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem2")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem3")
+            +image('comeiaItem1.svg', "comeiaItem comeiaItem4")
+
+            +image('comeiaItemNeltro.png', "comeiaItem comeiaItem5")
+            +image('comeiaItemNeltro.png', "comeiaItem comeiaItem6")
+
+     
+            .hit.comeiaItem1(item=1, page="10_c1_m3" )
+                +comeiaHit()
+                .seta
+                    p.down Dicas de investimento 
+                    +image('setaComeia.svg', "setaComeia in")
+            .hit.comeiaItem2(item=2 , page="13_c1_m4" )
+                +comeiaHit()
+                .seta
+                    p.down Análises Avançadas
+                    +image('setaComeia.svg', "setaComeia in")
+            .hit.comeiaItem3(item=3, page="16_c1_m5" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.right Exchange e Custódia
+            .hit.comeiaItem4(item=4, page="19_c1_m6" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.up Review
+            
+            .hit.comeiaItem5(item=5, page="05_c1_m1" )
+                +comeiaHit()
+                .seta
+                    +image('setaComeia.svg', "setaComeia in")
+                    p.up 
+            .hit.comeiaItem6(item=6, page="07_c1_m2" )
+                +comeiaHit()
+                .seta
+                    p.left 
+                    +image('setaComeia.svg', "setaComeia in")
+
+
+block scripts
+    script(src="script.js")

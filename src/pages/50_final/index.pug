@@ -1,0 +1,21 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container.containerAnima1
+        .bg
+        #particles-js
+        .triangulo
+            .trianguloBase.down.delay1
+                .triangImg.flicker
+                .titleContainer.up.delay2
+                    .title.highFreq
+                .iniciar.zoomIn.delay5
+                    div.flicker
+                
+
+block scripts
+    +scriptVendor('pdf.js')
+    script(src="script.js")

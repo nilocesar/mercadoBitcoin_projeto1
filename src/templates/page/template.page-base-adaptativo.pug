@@ -25,26 +25,71 @@ html.full-iframe.mr-fontsize
 					
 
 			#help
-				.image-help
-					+image('img02.png')
-				.texts
-					.row
-						.icon
-							+image('icon02.png')
-						p Para iniciar o circuito, você deverá clicar nos números que aparecem dentro do tabuleiro.
-					.row
-						.icon
-							+image('icon03.png')
-						p Em cada número, você encontrará situações relacionadas ao conteúdo aplicado, e seu desafio é solucionar essas situações selecionando a alternativa correta.
-					.row
-						.icon
-							+image('icon04.png')
-						p O circuito é composto por 10 desafios, e você deve acertar, no mínimo, 8 deles para comprovar que está por dentro da lei e garantir o topo do ranking do campeonato.
-				.modal-close
-					i.fa.fa-close
+				.containerHelp
+					.triangulH.zoomIn.delay1
+					.blocksH
+						.blockH.blockH1
+							.fundH
+							.conteudH
+								.titleH Instruções
+								.listH
+									.itH
+										+image('ico1H.png')
+										.textH Entre em nossa exchange e comece sua aventura por nosso metaverso. Clique no símbolo para começar.
+									.itH
+										+image('ico2H.png')
+										.textH Nosso primeiro módulo vai te guiar para nossa rede de blocos onde o conhecimento te aguarda. Clique no <b>Vamos lá</b>.
+									.itH
+										+image('ico3H.png')
+										.textH Nossa colmeia de desafios te mostrará qual a jornada que te espera.
+						.blockH.blockH2
+							.fundH
+							.conteudH
+								.titleH Status botões
+								.listH1
+									.itH
+										.textH A fazer
+										+image('comeiaItem1.svg', 'itemH1' )
+									.itH
+										.textH Próximo liberado
+										.comeiaItem2
+											+image('comeiaItem1.svg', 'itemH2' )
+											+comeiaHit()
+									.itH
+										.textH concluído
+										+image('comeiaItem1.svg' , 'itemH3')
+								.listH2
+									.itH
+										.textH A fazer
+										.material.itemH1
+											+image('ico1Material.png',"hitImg")
+											+image('borderMaterial.svg',"borderM")
+									.itH
+										.textH Próximo liberado
+										.material.itemH2
+											+image('ico1Material.png',"hitImg")
+											+image('borderMaterial.svg',"borderM")
+									.itH
+										.textH concluído
+										.material.itemH3
+											+image('ico1Material.png',"hitImg")
+											+image('borderMaterial.svg',"borderM")
+								.listH2
+									.itH
+										.textH PDF
+										.material.itemH3
+											+image('ico2Material.png',"hitImg")
+											+image('borderMaterial.svg',"borderM")
+									.itH
+										.textH Video
+										.material.itemH3
+											+image('ico1Material.png',"hitImg")
+											+image('borderMaterial.svg',"borderM")
 
-			.container-avatar
+					.modal-close
+						+image('closeBtn.svg')
 
+			
 		block body-after
 
 	+scriptVendor('eventEmitter.js')

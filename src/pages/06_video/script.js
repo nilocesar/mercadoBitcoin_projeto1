@@ -1,3 +1,0 @@
-events.on('ready', function () {
-  
-});
