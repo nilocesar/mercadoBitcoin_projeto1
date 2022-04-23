@@ -1,0 +1,14 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container
+        .embed-container
+            iframe(src='https://player.vimeo.com/video/697502745', frameborder='0', allowFullScreen)
+        .close-page(page="26_c2_m2")
+            +image('closeBtn.svg')
+
+block scripts
+    script(src="script.js")

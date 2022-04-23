@@ -1,0 +1,60 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    .container.containerAnima1
+        .bg
+        #particles-js
+        .triangulo.zoomIn.delay1
+            .cityContainer.zoomIn.delay2
+                video.safari_only(src="../../assets/videos/material.webm", preload="auto", autoplay, loop, muted )
+                +image('material.svg',"city safari_only")
+            .materia( comeia=2, material=2 )
+                
+                .hit.hit4.item1(item=1 , page="27_c2_m2_video1" )
+                    .hitBase.zoomIn.delay3
+                        +image('ico1Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Análise Fundamental
+                .hit.hit3.item2(item=2 , page="28_c2_m2_pdf1" )
+                    .hitBase.zoomIn.delay4
+                        +image('ico2Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Análise Fundamental - Complemento
+                
+                
+                .hit.hit1.item3(item=3 , page="29_c2_m2_video2" )
+                    .hitBase.zoomIn.delay5
+                        +image('ico1Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Rentabilidade
+                .hit.hit2.item4(item=4 , page="30_c2_m2_pdf2" )
+                    .hitBase.zoomIn.delay6
+                        +image('ico2Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Rentabilidade - Complemento
+                
+                .hit.hit5.item5(item=5 , page="31_c2_m2_video3" )
+                    .hitBase.zoomIn.delay7
+                        +image('ico1Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Minimizando a Volatilidade
+                .hit.hit6.item6(item=6 , page="32_c2_m2_pdf3" )
+                    .hitBase.zoomIn.delay8
+                        +image('ico2Material.png',"hitImg")
+                        +image('borderMaterial.svg',"borderM")
+                    .text.down
+                        .textInt Minimizando a Volatilidade - Complemento
+                
+                   
+                
+
+block scripts
+    script(src="script.js")
