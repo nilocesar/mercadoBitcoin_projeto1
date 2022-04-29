@@ -26,6 +26,12 @@ events.on('ready', function () {
       $('.comeiaItem'+ i ).addClass('visitado');
     }
   }
+
+  ///gambi
+  $('.comeiaItem5').removeClass('atual');
+  $('.comeiaItem6').removeClass('atual');
+  $('.comeiaItem5').addClass('inativo');
+  $('.comeiaItem6').addClass('inativo');
   
 
   $('.hit path').on('click', function(){

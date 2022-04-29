@@ -7,15 +7,36 @@ block body
     .container.containerAnima1
         .bg
         #particles-js
-        .triangulo
-            .trianguloBase.down.delay1
-                .triangImg.flicker
-                .titleContainer.up.delay2
-                    .title.highFreq
-                .iniciar.zoomIn.delay5
-                    div.flicker
-                
+        .content
+            .triangulo
+                .trianguloBase.down.delay1
+                    .triangImg.flicker
+                    .titleContainer.up.delay2
+                        .title.highFreq
+            .block.zoomIn.delay4
+                .text
+                    .title.up.delay4 Parabéns!
+                    p.up.delay5 Que jornada hein?! Aprender é sempre bom, ainda mais quando falamos das possibilidades de bons investimentos feitos com conhecimento e sabedoria.
+                    p.up.delay6 <b>Revisite os módulos para reforçar ainda mais seu aprendizado, escolha de maneira livre qual módulo gostaria de rever.</b>
+        
+        .btnX.btn1.zoomIn.delay7
+            .triangulo.right.delay7
+                .triangImg.highFreq
+            .block.left.delay8
+            .torre.up.delay7
+                .torreImg.flicker
+            .text
+                .title.left.delay8 Conhecendo<br> criptoativos
+        
+        .btnX.btn2.zoomIn.delay9
+            .triangulo.right.delay9
+                .triangImg.highFreq
+            .block.left.delay10
+            .torre.up.delay9
+                .torreImg.flicker
+            .text
+                .title.amarelo.left.delay10 Investindo em<br>criptoativos
+ 
 
 block scripts
-    +scriptVendor('pdf.js')
     script(src="script.js")

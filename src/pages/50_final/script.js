@@ -1,9 +1,13 @@
 events.on('ready', function () {
   
   scorm.setCompleted();
+  // scorm.set("cmi.suspend_data", "{}");
   
-  $('.triangulo').on('click', function() {
-    scorm.set("cmi.suspend_data", "{}");
-    navigate.goto('02_city');
+  $('.btn1').on('click', function() {
+    navigate.goto('03_intro');
+  })
+
+  $('.btn2').on('click', function() {
+    navigate.goto('21_intro');
   })
 })

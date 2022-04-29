@@ -8,7 +8,22 @@ events.on('ready', function () {
   var _materia = $('.materia').attr('material');
   
   $('.hit').on('click', function(){
-    scorm.saveObject("c"+_comeia+"m"+_materia, $(this).attr('item'));
+
+    if( scorm.loadObject("c"+_comeia+"m"+_materia) ){
+
+      var _ind = parseInt( scorm.loadObject("c"+_comeia+"m"+_materia) );
+      var _item = parseInt( $(this).attr('item') );
+      
+      if(_item > _ind ){
+        scorm.saveObject("c"+_comeia+"m"+_materia, $(this).attr('item'));
+      }
+
+    }else{
+      scorm.saveObject("c"+_comeia+"m"+_materia, $(this).attr('item'));
+    }
+    
+    
+
     navigate.goto( $(this).attr('page') );
   });
 
