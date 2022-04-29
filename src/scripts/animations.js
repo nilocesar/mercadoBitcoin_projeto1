@@ -1,6 +1,9 @@
 events.on('ready', function() {
     $('.pulse').addClass('animated pulse infinite');
     $('.flash').addClass('animated flash infinite');
+    
+    $('.inOpen').addClass('animated fadeIn');
+
     $('.left').addClass('animated fadeInLeft');
     $('.right').addClass('animated fadeInRight');
     $('.down').addClass('animated fadeInDown');
